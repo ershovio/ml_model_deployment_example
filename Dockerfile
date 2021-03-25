@@ -18,4 +18,4 @@ RUN python train.py
 EXPOSE 80
 
 # Run uvicorn server
-CMD ["uvicorn", "server:app", "--reload", "--host", "127.0.0.1", "--port", "80"]
+CMD ["uvicorn", "server:app", "--reload", "--host", "0.0.0.0", "--port", "80"]

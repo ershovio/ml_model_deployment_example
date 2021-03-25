@@ -1,4 +1,4 @@
-# An example of how to deploy Machine learning model using [Fast API](https://fastapi.tiangolo.com/) and [Docker](https://www.docker.com/),zon.com/)
+# An example of how to deploy Machine learning model using [Fast API](https://fastapi.tiangolo.com/) and [Docker](https://www.docker.com/)
 
 ## How to run
 * Install and run Docker

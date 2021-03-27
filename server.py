@@ -3,6 +3,10 @@ import uvicorn
 from fastapi import FastAPI
 from pydantic import BaseModel
 
+# App creation and model loading
+app = FastAPI()
+model = joblib.load("./model.joblib")
+
 
 class IrisSpecies(BaseModel):
     """
@@ -12,11 +16,6 @@ class IrisSpecies(BaseModel):
     sepal_width: float
     petal_length: float
     petal_width: float
-
-
-# App creation and model loading
-app = FastAPI()
-model = joblib.load("./model.joblib")
 
 
 @app.post('/predict')
